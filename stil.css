@@ -1,0 +1,256 @@
+* {
+  box-sizing:border-box;
+}
+
+* {
+  font-family:"Courier New", Courier, monospace;
+  font-style: normal;
+}
+
+.wrapper {
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.wrapper_int {
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+.header {
+   width: 100%;
+   height: 60px;
+   background-color: #BFC9CA;
+
+}
+
+.topnav {
+  width: 700pt;
+    float: right;
+
+
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family:  Sans-serif;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14.2pt 8pt;
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: bold;
+
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    font-family:  Sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    float: left;
+    overflow: hidden;
+    width: auto;
+}
+
+.dropdown .dropbtn {
+    font-family:  Sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14.2pt 8pt;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #BFC9CA;
+    width: 209px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 3pt 2pt;
+    font-weight: normal;
+
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, .dropdown:hover .dropbtn{
+    background-color: #BFC9CA;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #BFC9CA;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700pt) {
+  .topnav a:not(:first-child), .dropdown .dropbtn  {
+      display: none;
+    }
+
+    .topnav {
+        width: 100%;
+    }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 700pt) {
+  .topnav.responsive {position: relative; background-color: #BFC9CA;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+
+ .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.malocrne {
+    width: 100%;
+    background-color: #B2BABB;
+    height: 1px;
+}
+
+.logo {
+    display: inline;
+    text-align: center;
+
+
+}
+
+.logo img {
+  width: auto;
+    display: block;
+    margin-top: =10pt;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+.main {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10pt;
+  text-align: center;
+  box-sizing: border-box;
+
+  width: 100%;
+
+}
+
+.main_int {
+    display: inline;
+    align-items: flex-start;
+}
+.mainsm {
+    text-align: left;
+    margin:10pt;
+    margin-left: 10pt;
+    background-color: white;
+    width: 30%;
+    min-width: 220pt;
+    max-width: 20%;
+    display:inline-grid;
+    align-items: flex-end;
+}
+.image2 {
+    margin:10pt;
+    margin-left: 10pt;
+    background-color: white;
+    width: 50%;
+    min-width: 220pt;
+    max-width: 50%;
+    display:inline-grid;
+    text-align: center;
+}
+
+h1
+{
+  font-size:22pt;
+}
+
+h2
+{
+  font-size:16pt;
+}
+
+.footer {
+    margin-top: 40px;
+   width: 100%;
+   background-color: white;
+    border-top: 1px solid #B2BABB;
+    color: black;
+    font-size: 10pt;
+    padding: 14.2pt 8pt;
+}
+
+.footer_image {
+  float:left;
+}
+
+.footer_p {
+  float: right;
+}
+
+.avatr_img {
+  padding-right: 16px;
+}
