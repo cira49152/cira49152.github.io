@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ensaco</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap431/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/ensaco.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/swiper.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body></body>
+<div class="loader">
+    <div class="lds-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div class="helper shadow-lg"><img src="../assets/images/scroll.svg" width="auto" height="92px"></div>
+<header>
+    <div class="container">
+        <!--NAV BAR-->
+        <div class="row">
+            <div class="col-12 p-3 nav-bar">
+                <div class="row">
+                    <div class="col-6 col-lg-3 text-left">
+                        <div class="nav-bar__logo">
+                            <a href="../start/">
+                                <div class="nav-bar__logo--out">
+                                    <img class="nav-bar__logo-img" src="../assets/images/ensaco.svg" alt="ensaco">
+                                </div>
+                                <div class="nav-bar__logo--in">
+                                    <img class="nav-bar__logo-img" src="../assets/images/ensaco-hover.svg" alt="ensaco">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-9 text-right nav-bar__menu">
+                        <div class="ti-menu nav-bar__menu-icon text-black"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CONTENT BLOCK-->
+        <!-- Swiper -->
+        <div class="something" style="margin:0 -15px">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide border-bottom bg-white">
+                        <div class="temp">
+                            <p>ТРТ...</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-bottom bg-white">
+                        <div class="temp">
+                            <p>МРТ...</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-bottom bg-white">
+                        <div class="temp">
+                            <p>ЖИВОТ ИЛИ СМРТ!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next ti-arrow-circle-down"></div>
+                <div class="swiper-button-prev ti-arrow-circle-up"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- <div class="button button-eff">
+    <span>engineering</span>
+</div> -->
+<script type="text/javascript" src="../assets/js/jquery-331.js"></script>
+<script type="text/javascript" src="../assets/js/ensaco.js"></script>
+<script type="text/javascript" src="../assets/js/swiper.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        speed: 700,
+        direction: 'vertical',
+        mousewheel: true,
+        spaceBetween: 0,
+        freeMode: true,
+        keyboard: {
+            enabled: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+</body>
+
+
+
+</html>
