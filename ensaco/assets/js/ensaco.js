@@ -1,7 +1,7 @@
 $(document).ready(function() {
     setTimeout(function() {
-        var swiper = new Swiper('.swiper-container', {
-            speed: 700,
+        var swiper = new Swiper('.swiper-container.start', {
+            speed: 550,
             direction: 'vertical',
             mousewheel: true,
             spaceBetween: 0,
@@ -18,14 +18,18 @@ $(document).ready(function() {
                 clickable: true,
             },
         });
+
+        //Loader, Scroll info & timeout for sim purposes
+        var scrollInfo = $('.scroll-info');
         $(".loader").fadeOut(800, function() {
             $(".container").fadeIn(700);
             if ($(window).width() > 768) {
-                $('.helper').fadeIn(300);
+                scrollInfo.fadeIn(300);
                 setTimeout(function() {
-                    $('.helper').fadeOut(300);
-                }, 1500);
+                    scrollInfo.fadeOut(300);
+                }, 800);
             }
         });
     }, 700);
+
 });

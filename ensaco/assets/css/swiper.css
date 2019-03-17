@@ -180,7 +180,7 @@
     font-size: 26px;
     position: absolute;
     color: rgb(50, 55, 55);
-    top: calc(100% - 44px);
+    top: calc(100% - 50px);
     width: 20px;
     height: 20px;
     z-index: 10;
@@ -307,12 +307,11 @@
 }
 
 .swiper-pagination-bullet {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     display: inline-block;
-    border-radius: 50%;
     background: #000;
-    opacity: .2
+    opacity: .5;
 }
 
 button.swiper-pagination-bullet {
