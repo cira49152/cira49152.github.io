@@ -28,6 +28,9 @@ $(document).ready(function() {
                 setTimeout(function() {
                     scrollInfo.fadeOut(300);
                 }, 800);
+                setTimeout(function() {
+                    $('.slide-content__title').slideDown(600);
+                }, 800);
             }
         });
     }, 700);

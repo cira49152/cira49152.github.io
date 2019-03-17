@@ -331,7 +331,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
     opacity: 1;
-    background: rgb(236, 119, 0);
+    background: rgb(240, 90, 0);
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
