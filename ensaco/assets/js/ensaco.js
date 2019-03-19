@@ -5,7 +5,7 @@ $(document).ready(function() {
             direction: 'vertical',
             mousewheel: true,
             spaceBetween: 0,
-            freeMode: true,
+            freeMode: false,
             keyboard: {
                 enabled: true,
             },
@@ -20,19 +20,19 @@ $(document).ready(function() {
         });
 
         //Loader, Scroll info & timeout for sim purposes
-        var scrollInfo = $('.scroll-info');
-        $(".loader").fadeOut(800, function() {
-            $(".container").fadeIn(700);
-            if ($(window).width() > 768) {
-                scrollInfo.fadeIn(300);
-                setTimeout(function() {
-                    scrollInfo.fadeOut(300);
-                }, 800);
-                setTimeout(function() {
-                    $('.slide-content__title').slideDown(600);
-                }, 800);
-            }
-        });
+        // var scrollInfo = $('.scroll-info');
+        // $(".loader").fadeOut(800, function() {
+        //     $(".container").fadeIn(700);
+        //     if ($(window).width() > 768) {
+        //         scrollInfo.fadeIn(300);
+        //         setTimeout(function() {
+        //             scrollInfo.fadeOut(300);
+        //         }, 800);
+        //         setTimeout(function() {
+        //             $('.slide-content__title').slideDown(600);
+        //         }, 800);
+        //     }
+        // });
     }, 700);
 
 });

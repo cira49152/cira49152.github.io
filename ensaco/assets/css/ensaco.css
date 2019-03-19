@@ -238,53 +238,82 @@ a.animated-button.diagonal-cover:after {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-@media (min-width: 1200px) {
-  .slide-content {
-    margin: 0 auto;
-    width: 100%;
+.slide-content-copy {
+  display: block;
+  z-index: 5;
+}
+.slide-content-copy__first {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 65%;
+  padding: 0;
+}
+.slide-content-copy__title {
+  display: block;
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  color: #f05a00;
+  padding-top: 0;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -2.5px;
+}
+.slide-content-copy__text {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: normal;
+  font-size: 30px;
+  line-height: 42px;
+  color: #323737;
+  width: 57%;
+}
+.slide-content__image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 100;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .slide-content__image {
     height: 100%;
   }
-  .slide-content .slide-content__title {
-    display: block;
-    color: white;
-    font-family: 'Roboto', serif;
-    font-weight: 700;
-    position: absolute;
+  .slide-content-copy__title {
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .slide-content-copy__text {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 400;
+    width: 80%;
+  }
+  .slide-content-copy__first {
+    position: relative;
+    width: 80%;
+    margin: 10%;
     top: 0;
-    color: #f05a00;
-    width: 70%;
     left: 0;
-    padding-left: 11%;
-    padding-top: 0;
-    font-size: 80px;
-    line-height: 80px;
-    letter-spacing: -2px;
-    z-index: 200;
   }
-  .slide-content .slide-content__subtitle {
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    letter-spacing: normal;
-    font-size: 24px;
-    line-height: 38px;
-    color: #323737;
-    width: 56%;
+  .slide-content__image--responsive-image {
+    margin-top: 54px;
+    height: 40%;
   }
-  .slide-content .slide-content__subtitle--secondary {
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    letter-spacing: normal;
-    font-size: 18px;
+}
+@media (max-width: 576px) {
+  .slide-content-copy__title {
+    font-size: 30px;
     line-height: 30px;
+    letter-spacing: -1px;
   }
-  .slide-content .slide-content__image {
-    background-size: cover;
-    background-position: center center;
-    z-index: 100;
-    width: 55%;
-    margin: 0;
+  .slide-content-copy__text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
   }
 }
 .lds-grid {
