@@ -1,4 +1,4 @@
-window.top.scrollTo(0, 1);
+window.top.scrollTo(0, 20);
 
 $(document).ready(function() {
     setTimeout(function() {
