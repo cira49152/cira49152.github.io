@@ -203,10 +203,10 @@ a:active {
   left: 0;
   display: none;
 }
-.nav-bar__logo:hover .nav-bar__logo--in {
+.nav-bar__logo:hover {
   display: block;
 }
-.nav-bar__logo .nav-bar__logo-img {
+.nav-bar__logo-img {
   width: 100%;
   width: 160px;
   height: auto;
@@ -221,7 +221,7 @@ a:active {
   background: #f05a00;
   float: right;
 }
-.nav-bar__menu-icon:hover .nav-bar__menu-icon {
+.nav-bar__menu-icon:hover {
   background: #b43200;
 }
 .text-black {
@@ -241,6 +241,58 @@ a:active {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.nav-bar__menu-items {
+  display: block;
+  width: 30%;
+  height: 100vh;
+  background-color: #f05a00;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav-bar__menu-items .level-1 {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.nav-bar__menu-items .level-1 li {
+  display: block;
+  width: 100%;
+}
+.nav-bar__menu-items .level-1 li a {
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  padding: 20px 10%;
+  text-align: left;
+  transition: all .15s linear;
+}
+.nav-bar__menu-items .level-1 li a:hover {
+  opacity: .5;
+}
+.nav-bar__menu-items .level-1 li a span {
+  float: right;
+}
+.nav-bar__menu-items .level-1 .level-2 {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.nav-bar__menu-items .level-1 .level-2 li:hover {
+  opacity: .5;
+}
+.nav-bar__menu-items .level-1 .level-2 li span {
+  float: left;
 }
 .slide-content-copy {
   display: block;
