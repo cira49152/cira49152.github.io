@@ -36,3 +36,21 @@ $(document).ready(function() {
     }, 700);
 
 });
+
+if( !window.location.hash && window.addEventListener ){
+    window.addEventListener("load", function() {
+        setTimeout(function(){
+            window.scrollTo(0, 0);
+        }, 0);
+    });
+    window.addEventListener( "orientationchange",function() {
+        setTimeout(function(){
+            window.scrollTo(0, 0);
+        }, 0);
+    });
+    window.addEventListener( "touchstart",function() {
+         setTimeout(function(){
+             window.scrollTo(0, 0);
+         }, 0);
+     });
+}
