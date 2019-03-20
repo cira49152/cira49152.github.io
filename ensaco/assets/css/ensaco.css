@@ -330,11 +330,11 @@ a:active {
   }
   .slide-content__image--responsive-image {
     margin-top: 60px;
-    height: 40%;
+    height: 35%;
   }
   .slide-content__image--responsive-image-secondary {
     margin-top: 60px;
-    height: 25% !important;
+    height: 20% !important;
   }
   .swiper-button-free {
     font-size: 30px !important;
@@ -372,11 +372,16 @@ a:active {
     font-size: 14px;
     line-height: 19px;
   }
+  .btn-rnd {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
 }
 @media (max-width: 320px) {
   .slide-content__image--responsive-image {
     margin-top: 60px;
-    height: 30%;
+    height: 25%;
   }
   .slide-content__image--responsive-image-secondary {
     margin-top: 60px;
