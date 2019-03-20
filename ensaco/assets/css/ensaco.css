@@ -9,6 +9,42 @@
   font-weight: bold;
   src: url("../fonts/Lora-Bold.ttf") format('ttf');
 }
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/fa-regular-400.eot");
+  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+}
 * {
   box-sizing: border-box;
 }
@@ -30,7 +66,7 @@ body {
 }
 p {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
 h1,
 h2,
@@ -99,84 +135,46 @@ a:active {
   text-decoration: none;
   color: #323737;
 }
-a.animated-button:link,
-a.animated-button:visited {
-  position: relative;
-  display: block;
-  margin: 0 auto 0;
-  padding: 14px 15px;
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f05a00;
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 0 #b43200;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  padding: 14px 40px;
   color: #fff;
   font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
-  overflow: hidden;
-  letter-spacing: .08em;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.btn:hover {
+  box-shadow: inset 200px 0 0 0 #b43200;
+  color: #fff;
   border: none;
-  border-radius: 0;
 }
-a.animated-button:link:after,
-a.animated-button:visited:after {
-  content: "";
-  position: absolute;
-  height: 0%;
-  left: 50%;
-  top: 50%;
-  width: 150%;
-  z-index: -1;
-  -webkit-transition: all 0.75s ease 0s;
-  -moz-transition: all 0.75s ease 0s;
-  -o-transition: all 0.75s ease 0s;
-  transition: all 0.75s ease 0s;
-}
-a.animated-button:link:hover,
-a.animated-button:visited:hover {
-  color: #FFF;
-  text-shadow: none;
-  background: transparent;
-}
-a.animated-button:link:hover:after,
-a.animated-button:visited:hover:after {
-  height: 450%;
-}
-a.animated-button:link,
-a.animated-button:visited {
-  position: relative;
-  display: block;
-  margin: 0 auto 0;
-  padding: 10px 15px;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  letter-spacing: .08em;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+.btn-rnd {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f05a00;
   border: none;
-  border-radius: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0 #b43200;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  color: #fff;
+  font-size: 22px;
 }
-a.animated-button.diagonal-cover:after {
-  background: #b43200;
-  -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-  -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-  -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-  transform: translateX(-50%) translateY(-50%) rotate(25deg);
-}
-.btn-width {
-  width: 180px;
-  float: left;
-  clear: both;
-  background: #f05a00;
+.btn-rnd:hover {
+  box-shadow: inset 200px 0 0 0 #b43200;
+  color: #fff;
   border: none;
 }
 .swiper-button-free {
@@ -189,7 +187,7 @@ a.animated-button.diagonal-cover:after {
   height: auto !important;
 }
 .swiper-button-free:hover {
-  opacity: .5;
+  color: #b43200 !important;
 }
 .nav-bar {
   position: fixed;
@@ -222,6 +220,9 @@ a.animated-button.diagonal-cover:after {
   color: white;
   background: #f05a00;
   float: right;
+}
+.nav-bar__menu-icon:hover .nav-bar__menu-icon {
+  background: #b43200;
 }
 .text-black {
   color: #323737;
@@ -258,9 +259,9 @@ a.animated-button.diagonal-cover:after {
   font-weight: 700;
   color: #f05a00;
   padding-top: 0;
-  font-size: 80px;
-  line-height: 80px;
-  letter-spacing: -1px;
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: -2px;
 }
 .slide-content-copy__text {
   display: block;
@@ -283,6 +284,19 @@ a.animated-button.diagonal-cover:after {
 }
 .slide-content__image--responsive-image {
   height: 100%;
+}
+.slide-map {
+  widows: 100%;
+  height: 100%;
+  margin-top: 60px;
+  overflow: hidden;
+  background: #323737;
+}
+@media (max-width: 1280px) {
+  .slide-content-copy__title {
+    font-size: 72px;
+    line-height: 72px;
+  }
 }
 @media (max-width: 1024px) {
   .slide-content-copy__title {
@@ -326,7 +340,7 @@ a.animated-button.diagonal-cover:after {
     font-size: 30px !important;
   }
   .slide-content--padding {
-    padding: 10% !important;
+    padding: 0 10% !important;
   }
   h1 {
     font-size: 28px;
@@ -336,6 +350,10 @@ a.animated-button.diagonal-cover:after {
   }
   p {
     font-size: 18px;
+  }
+  .btn {
+    transition: none;
+    padding: 7px 30px;
   }
 }
 @media (max-width: 576px) {
