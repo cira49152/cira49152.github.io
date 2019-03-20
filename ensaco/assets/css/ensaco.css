@@ -341,6 +341,7 @@ a:active {
   }
   .slide-content--padding {
     padding: 0 10% !important;
+    height: 60%;
   }
   h1 {
     font-size: 28px;
