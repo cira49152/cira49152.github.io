@@ -220,7 +220,7 @@
       transition: all 0.5s ease;
   }
   
-  .nav-bar__menu-icon{
+  .nav-bar__menu-icon-open, .nav-bar__menu-icon-close{
     font-size: 24px;
     color:white;
     background: @baseOrange;
@@ -249,13 +249,13 @@
 
   //Menu Nav
 .nav-bar__menu-items{
-  display: block;
-  width:30%;
+  width:450px;
   height: 100vh;
   background-color: @baseOrange;
   position: absolute;
   right:0;
   top:0;
+  cursor: default;
   .level-1{
     display: block;
     clear: both;
@@ -273,9 +273,11 @@
         font-family: @roboto;
         text-transform: capitalize;
         letter-spacing: 0;
-        padding: 20px 10%;
+        padding: 15px 10%;
         text-align: left;
         transition: all .15s linear;
+        font-size: 18px;
+        font-weight: 500;
         &:hover{
           opacity:.5;
         }
@@ -285,7 +287,7 @@
       }
     }
     .level-2{
-      display: block;
+      display: none;
     clear: both;
     width: 100%;
     padding: 0;
@@ -300,8 +302,10 @@
         }
       }
     }
-    
   }
+}
+.hide{
+  display:none !important;
 }
 
   //Content
@@ -423,6 +427,9 @@
           transition: none;
           padding: 7px 30px;
         }
+        .nav-bar__menu-items{
+          width:400px;
+        }
       }
       
       @media(max-width: 576px) {
@@ -445,12 +452,16 @@
           height: 38px;
           font-size: 20px;
         }
-        // .swiper-button-next, .swiper-button-prev{
-        //   visibility: hidden;
-        // }
+        .nav-bar__menu-items{
+          width:300px;
+          .level-1 li a, .level-2 li a {
+            padding: 12px 20px;
+            font-size: 17px;
+          } 
+        }
       }
 
-      @media(max-width:320px){
+      @media(max-width:321px){
         .slide-content__image--responsive-image{
           margin-top: 60px;
           height: 25%;
@@ -458,6 +469,12 @@
         .slide-content__image--responsive-image-secondary{
           margin-top: 60px;
           height: 18% !important;
+        }
+        .nav-bar__menu-items{
+          width:300px;
+          .level-1 li a, .level-2 li a {
+            padding: 10px 20px;
+          }
         }
       }
       
@@ -468,7 +485,7 @@
   position: absolute;
   top:50%;
   left:50%;
-  transform: translate(-32px, -32px);
+  transform: translate(-32px, -64px);
   width: 64px;
   height: 64px;
 }
@@ -476,7 +493,6 @@
   position: absolute;
   width: 13px;
   height: 13px;
-  //border-radius: 50%;
   background:@baseOrange;
   animation: lds-grid 1.2s linear infinite;
   &:nth-child(1){

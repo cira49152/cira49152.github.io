@@ -34,6 +34,11 @@ $(document).ready(function() {
             }
         });
     }, 700);
-
 });
 
+//Menu
+if ($('nav').hasClass('d-none')) {
+    $('.nav-bar__menu-icon-open').on('click', function() {
+        $('nav').removeClass('d-none');
+    })
+};

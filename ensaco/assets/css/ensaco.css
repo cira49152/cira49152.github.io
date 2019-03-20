@@ -215,13 +215,15 @@ a:active {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.nav-bar__menu-icon {
+.nav-bar__menu-icon-open,
+.nav-bar__menu-icon-close {
   font-size: 24px;
   color: white;
   background: #f05a00;
   float: right;
 }
-.nav-bar__menu-icon:hover {
+.nav-bar__menu-icon-open:hover,
+.nav-bar__menu-icon-close:hover {
   background: #b43200;
 }
 .text-black {
@@ -243,13 +245,13 @@ a:active {
   transition: all 0.5s ease;
 }
 .nav-bar__menu-items {
-  display: block;
-  width: 30%;
+  width: 450px;
   height: 100vh;
   background-color: #f05a00;
   position: absolute;
   right: 0;
   top: 0;
+  cursor: default;
 }
 .nav-bar__menu-items .level-1 {
   display: block;
@@ -270,9 +272,11 @@ a:active {
   font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
   letter-spacing: 0;
-  padding: 20px 10%;
+  padding: 15px 10%;
   text-align: left;
   transition: all .15s linear;
+  font-size: 18px;
+  font-weight: 500;
 }
 .nav-bar__menu-items .level-1 li a:hover {
   opacity: .5;
@@ -281,7 +285,7 @@ a:active {
   float: right;
 }
 .nav-bar__menu-items .level-1 .level-2 {
-  display: block;
+  display: none;
   clear: both;
   width: 100%;
   padding: 0;
@@ -293,6 +297,9 @@ a:active {
 }
 .nav-bar__menu-items .level-1 .level-2 li span {
   float: left;
+}
+.hide {
+  display: none !important;
 }
 .slide-content-copy {
   display: block;
@@ -408,6 +415,9 @@ a:active {
     transition: none;
     padding: 7px 30px;
   }
+  .nav-bar__menu-items {
+    width: 400px;
+  }
 }
 @media (max-width: 576px) {
   .slide-content-copy__title {
@@ -429,8 +439,16 @@ a:active {
     height: 38px;
     font-size: 20px;
   }
+  .nav-bar__menu-items {
+    width: 300px;
+  }
+  .nav-bar__menu-items .level-1 li a,
+  .nav-bar__menu-items .level-2 li a {
+    padding: 12px 20px;
+    font-size: 17px;
+  }
 }
-@media (max-width: 320px) {
+@media (max-width: 321px) {
   .slide-content__image--responsive-image {
     margin-top: 60px;
     height: 25%;
@@ -439,13 +457,20 @@ a:active {
     margin-top: 60px;
     height: 18% !important;
   }
+  .nav-bar__menu-items {
+    width: 300px;
+  }
+  .nav-bar__menu-items .level-1 li a,
+  .nav-bar__menu-items .level-2 li a {
+    padding: 10px 20px;
+  }
 }
 .lds-grid {
   display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-32px, -32px);
+  transform: translate(-32px, -64px);
   width: 64px;
   height: 64px;
 }
