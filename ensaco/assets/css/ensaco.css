@@ -130,6 +130,13 @@ h6 {
 .slide-content--padding {
   padding: 0 5rem !important;
 }
+.rotate {
+  transform: rotate(180deg);
+  transition: all .3s linear;
+}
+.ti-angle-down {
+  transition: all .3s linear;
+}
 a:link,
 a:active {
   text-decoration: none;
@@ -215,15 +222,13 @@ a:active {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.nav-bar__menu-icon-open,
-.nav-bar__menu-icon-close {
+.nav-bar__menu-icon {
   font-size: 24px;
   color: white;
   background: #f05a00;
   float: right;
 }
-.nav-bar__menu-icon-open:hover,
-.nav-bar__menu-icon-close:hover {
+.nav-bar__menu-icon:hover {
   background: #b43200;
 }
 .text-black {
@@ -252,6 +257,7 @@ a:active {
   right: 0;
   top: 0;
   cursor: default;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
 }
 .nav-bar__menu-items .level-1 {
   display: block;
@@ -272,7 +278,7 @@ a:active {
   font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
   letter-spacing: 0;
-  padding: 15px 10%;
+  padding: 5% 22px 5% 10%;
   text-align: left;
   transition: all .15s linear;
   font-size: 18px;
@@ -283,6 +289,9 @@ a:active {
 }
 .nav-bar__menu-items .level-1 li a span {
   float: right;
+}
+.nav-bar__menu-items .level-1 li a i {
+  color: #b43200;
 }
 .nav-bar__menu-items .level-1 .level-2 {
   display: none;
@@ -297,9 +306,6 @@ a:active {
 }
 .nav-bar__menu-items .level-1 .level-2 li span {
   float: left;
-}
-.hide {
-  display: none !important;
 }
 .slide-content-copy {
   display: block;
@@ -351,16 +357,22 @@ a:active {
   overflow: hidden;
   background: #323737;
 }
+@media (max-width: 1400px) {
+  .slide-content-copy__title {
+    font-size: 68px;
+    line-height: 68px;
+  }
+}
 @media (max-width: 1280px) {
   .slide-content-copy__title {
-    font-size: 72px;
-    line-height: 72px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 @media (max-width: 1024px) {
   .slide-content-copy__title {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 50px;
   }
   p {
     font-size: 20px;
@@ -441,10 +453,6 @@ a:active {
   }
   .nav-bar__menu-items {
     width: 300px;
-  }
-  .nav-bar__menu-items .level-1 li a,
-  .nav-bar__menu-items .level-2 li a {
-    padding: 12px 20px;
     font-size: 17px;
   }
 }
@@ -459,10 +467,6 @@ a:active {
   }
   .nav-bar__menu-items {
     width: 300px;
-  }
-  .nav-bar__menu-items .level-1 li a,
-  .nav-bar__menu-items .level-2 li a {
-    padding: 10px 20px;
   }
 }
 .lds-grid {

@@ -24,7 +24,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script type="text/javascript" src="assets/js/jquery-331.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap431/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/ensaco.css">
@@ -69,16 +68,22 @@
                             </div>
                         </div>
                         <div class="col-6 col-lg-9 text-right nav-bar__menu pr-0">
-                            <div class="ti-menu nav-bar__menu-icon-open btn p-3 p-lg-3 pr-0 text-center text-white">
-                                <nav class="d-none">
-                                    <div class="nav-bar__menu-items shadow-sm">
-                                        <div class="ti-close nav-bar__menu-icon-close d-block btn p-3 p-lg-3 pr-0 text-center text-white align-items-center">
+                            <div class="ti-menu nav-bar__menu-icon btn p-3 p-lg-3 pr-0 text-center text-white">
+                            </div>
+                            <nav style="display:none">
+                                    <div class="nav-bar__menu-items">
+                                        <div class="ti-close nav-bar__menu-icon d-block btn p-3 p-lg-3 pr-0 text-center text-white align-items-center">
                                         </div>
                                         <ul class="level-1">
                                             <li><a href="../software/">Software</a></li>
                                             <li><a href="../automation/">Automation</a></li>
                                             <li><a href="../engineering/">Engineering</a></li>
-                                            <li><a href="../consulting/">Consulting</a></li>
+                                            <li><a href="javascript:void(0)">Consulting<span class="ti-angle-down"></span></a>
+                                                <ul class="level-2">
+                                                        <li><a href="../company/"><span class="ti-arrow-right mr-2"></span>Expertise</a></li>
+                                                        <li><a href="../company/"><span class="ti-arrow-right mr-2"></span>Team</a></li>
+                                                    </ul>
+                                            </li>
                                             <li><a href="javascript:void(0)">Company<span class="ti-angle-down"></span></a>
                                                 <ul class="level-2">
                                                     <li><a href="../company/"><span class="ti-arrow-right mr-2"></span>Expertise</a></li>
@@ -89,7 +94,6 @@
                                         </ul>
                                     </div>
                                 </nav>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -269,7 +273,7 @@
         </div>
     </header>
 
-
+    <script type="text/javascript" src="assets/js/jquery-331.js"></script>
     <script type="text/javascript" src="assets/js/swiper.js"></script>
     <script type="text/javascript" src="assets/js/ensaco.js"></script>
 </body>

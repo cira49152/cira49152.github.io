@@ -127,6 +127,13 @@
   .slide-content--padding{
     padding: 0 5rem !important;
   }
+  .rotate{
+    transform: rotate(180deg);
+    transition: all .3s linear;
+  }
+  .ti-angle-down{
+    transition: all .3s linear;
+  }
 
   //Links
   a:link, a:active{
@@ -220,7 +227,7 @@
       transition: all 0.5s ease;
   }
   
-  .nav-bar__menu-icon-open, .nav-bar__menu-icon-close{
+  .nav-bar__menu-icon{
     font-size: 24px;
     color:white;
     background: @baseOrange;
@@ -256,6 +263,7 @@
   right:0;
   top:0;
   cursor: default;
+  box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
   .level-1{
     display: block;
     clear: both;
@@ -273,7 +281,7 @@
         font-family: @roboto;
         text-transform: capitalize;
         letter-spacing: 0;
-        padding: 15px 10%;
+        padding: 5% 22px 5% 10%;
         text-align: left;
         transition: all .15s linear;
         font-size: 18px;
@@ -283,6 +291,9 @@
         }
         span{
           float:right;
+        }
+        i{
+          color:@darkOrange;
         }
       }
     }
@@ -303,9 +314,6 @@
       }
     }
   }
-}
-.hide{
-  display:none !important;
 }
 
   //Content
@@ -360,17 +368,24 @@
           background:@baseGray;
         }
 
+      @media(max-width:1400px){
+        .slide-content-copy__title{
+          font-size: 68px;
+          line-height: 68px;
+          }
+      }
+
       @media(max-width:1280px){
         .slide-content-copy__title{
-        font-size: 72px;
-        line-height: 72px;
+        font-size: 60px;
+        line-height: 60px;
         }
       }
 
       @media(max-width:1024px){
         .slide-content-copy__title{
-          font-size: 60px;
-          line-height: 60px;
+          font-size: 50px;
+          line-height: 50px;
           }
           p{
             font-size: 20px;
@@ -454,11 +469,8 @@
         }
         .nav-bar__menu-items{
           width:300px;
-          .level-1 li a, .level-2 li a {
-            padding: 12px 20px;
-            font-size: 17px;
-          } 
-        }
+          font-size: 17px;
+        } 
       }
 
       @media(max-width:321px){
@@ -472,9 +484,7 @@
         }
         .nav-bar__menu-items{
           width:300px;
-          .level-1 li a, .level-2 li a {
-            padding: 10px 20px;
-          }
+
         }
       }
       

@@ -34,11 +34,19 @@ $(document).ready(function() {
             }
         });
     }, 700);
+
+
+    $('.nav-bar__menu-icon').on('click', function() {
+        $('nav').toggle();
+    });
+
+    $('.level-1 li').on('click', function(ev){
+        $evTarget = $(ev.target);
+        $evTarget.next('.level-2').slideToggle(200);
+        $evTarget.find($('.ti-angle-down')).toggleClass('rotate');
+        $('.level-2').not($evTarget.next('.level-2')).slideUp(200);
+        $('.ti-angle-down').not($evTarget.find($('.ti-angle-down'))).removeClass('rotate');
+    });
+    
 });
 
-//Menu
-if ($('nav').hasClass('d-none')) {
-    $('.nav-bar__menu-icon-open').on('click', function() {
-        $('nav').removeClass('d-none');
-    })
-};
