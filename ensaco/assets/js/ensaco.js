@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     //Loader, Scroll info & timeout for sim purposes
     var scrollInfo = $('.scroll-info');
-    $(".loader").fadeOut(800, function() {
+    $(".loader").fadeOut(900, function() {
         $(".container").fadeIn(700);
         if ($(window).width() > 768) {
             scrollInfo.fadeIn(300);
@@ -33,7 +33,7 @@ $(document).ready(function() {
             }, 800);
         }
     });
-    }, 700);
+    }, 300);
 
     //Menu trigger
     $('.nav-bar__menu-icon').on('click', function() {
