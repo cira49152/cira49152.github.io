@@ -19,33 +19,41 @@ $(document).ready(function() {
             },
         });
 
-        //Loader, Scroll info & timeout for sim purposes
-        var scrollInfo = $('.scroll-info');
-        $(".loader").fadeOut(800, function() {
-            $(".container").fadeIn(700);
-            if ($(window).width() > 768) {
-                scrollInfo.fadeIn(300);
-                setTimeout(function() {
-                    scrollInfo.fadeOut(300);
-                }, 800);
-                setTimeout(function() {
-                    $('.slide-content__title').slideDown(600);
-                }, 800);
-            }
-        });
+    //Loader, Scroll info & timeout for sim purposes
+    var scrollInfo = $('.scroll-info');
+    $(".loader").fadeOut(800, function() {
+        $(".container").fadeIn(700);
+        if ($(window).width() > 768) {
+            scrollInfo.fadeIn(300);
+            setTimeout(function() {
+                scrollInfo.fadeOut(300);
+            }, 1000);
+            setTimeout(function() {
+                $('.slide-content__title').slideDown(600);
+            }, 800);
+        }
+    });
     }, 700);
 
-
+    //Menu trigger
     $('.nav-bar__menu-icon').on('click', function() {
         $('nav').toggle();
     });
-
+    //Menu toggle
     $('.level-1 li').on('click', function(ev){
         $evTarget = $(ev.target);
         $evTarget.next('.level-2').slideToggle(200);
         $evTarget.find($('.ti-angle-down')).toggleClass('rotate');
         $('.level-2').not($evTarget.next('.level-2')).slideUp(200);
         $('.ti-angle-down').not($evTarget.find($('.ti-angle-down'))).removeClass('rotate');
+    });
+
+    //Logo effect
+    $('.nav-bar__logo-img').mouseenter(function(){
+        $(this).attr('src','assets/images/ensaco-hover.svg');
+    });
+    $('.nav-bar__logo-img').mouseleave(function(){
+        $(this).attr('src','assets/images/ensaco.svg');
     });
     
 });

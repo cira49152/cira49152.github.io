@@ -197,30 +197,17 @@ a:active {
   color: #b43200 !important;
 }
 .nav-bar {
-  position: fixed;
+  position: absolute;
   z-index: 100;
 }
 .nav-bar__logo {
   width: 160px;
 }
-.nav-bar__logo .nav-bar__logo--in {
-  width: 160px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-.nav-bar__logo:hover {
-  display: block;
-}
-.nav-bar__logo-img {
+.nav-bar__logo .nav-bar__logo-img {
   width: 100%;
   width: 160px;
   height: auto;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  display: block;
 }
 .nav-bar__menu-icon {
   font-size: 24px;
@@ -304,7 +291,15 @@ a:active {
 .nav-bar__menu-items .level-1 .level-2 li:hover {
   opacity: .5;
 }
+.nav-bar__menu-items .level-1 .level-2 li a {
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 .nav-bar__menu-items .level-1 .level-2 li span {
+  font-size: 12px;
+  line-height: 22px;
   float: left;
 }
 .slide-content-copy {
