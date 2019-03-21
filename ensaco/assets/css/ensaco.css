@@ -66,12 +66,24 @@ body {
 }
 p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
 }
-h1,
-h2,
-h3 {
+h1 {
+  font-size: 60px;
+  line-height: 65px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
   font-family: 'Roboto', sans-serif;
+}
+h2 {
+  display: block;
+  width: auto;
+  font-size: 18px;
+  font-weight: 300;
+  color: #f05a00;
+  letter-spacing: 6px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 h3 {
   font-weight: bold;
@@ -88,8 +100,17 @@ h6 {
 .text-black {
   color: #323737;
 }
+.introduction {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -0.25px;
+}
+.ens-data-signature {
+  color: rgba(50, 55, 55, 0.5);
+}
 .loader {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -271,7 +292,7 @@ a.btn {
   font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
   letter-spacing: 0;
-  padding: 5% 22px 5% 10%;
+  padding: 5% 22px 3% 10%;
   text-align: left;
   transition: all .15s linear;
   font-size: 18px;
@@ -358,12 +379,37 @@ a.btn {
   overflow: hidden;
   background: #323737;
 }
-.ens-header {
+.ens-article__left-block {
+  margin-top: 150px;
+}
+.ens-article__left-block .ens-article__inline-image {
+  width: 90%;
+}
+.ens-article__table-wrapper {
+  overflow: auto;
+}
+.ens-article__table-wrapper .ens-article__table {
+  background: rgba(50, 55, 55, 0.1);
+  white-space: nowrap;
+}
+.ens-article__table-wrapper .ens-article__table th {
+  background: rgba(240, 90, 0, 0.1);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 18px;
+}
+.ens-article__table-wrapper .ens-article__table td {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 9px 18px;
+}
+.ens-article__right-block {
+  background: #323737;
+  padding-top: 150px;
+}
+.ens-article__right-block .ens-article__image {
   width: 100%;
-  height: 250px !important;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-attachment: fixed;
+  height: auto;
 }
 @media (max-width: 1400px) {
   .slide-content-copy__title {
@@ -424,9 +470,8 @@ a.btn {
   }
   h1 {
     font-size: 28px;
-  }
-  h2 {
-    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0;
   }
   p {
     font-size: 18px;
@@ -441,6 +486,17 @@ a.btn {
   .ens-header {
     height: 180px;
   }
+  .ens-article__left-block {
+    margin-top: 90px;
+  }
+  .ens-article__right-block {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .ens-article__right-block {
+    padding-top: 0px;
+  }
 }
 @media (max-width: 576px) {
   .slide-content-copy__title {
@@ -449,13 +505,17 @@ a.btn {
     letter-spacing: -1px;
   }
   .slide-content-copy__text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     width: 100%;
   }
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
   p {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .btn-rnd {
     width: 38px;
@@ -465,6 +525,15 @@ a.btn {
   .nav-bar__menu-items {
     width: 300px;
     font-size: 17px;
+  }
+  .introduction {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+  .ens-article__left-block .ens-article__inline-image {
+    width: 100%;
   }
 }
 @media (max-width: 321px) {
