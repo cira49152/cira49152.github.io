@@ -50,11 +50,12 @@ $(document).ready(function() {
 
     //Logo effect
     $('.nav-bar__logo-img').mouseenter(function(){
-        $(this).attr('src','/ensaco/assets/images/ensaco-hover.svg');
+        $(this).attr('src',function(index, attr){
+            return attr.replace(".svg", "-hover.svg");});
     });
     $('.nav-bar__logo-img').mouseleave(function(){
-        $(this).attr('src','/ensaco/assets/images/ensaco.svg');
-    });
+        $(this).attr('src',function(index, attr){
+            return attr.replace("-hover.svg",".svg");});      
+        });    
     
-});
-
+}); 

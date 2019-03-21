@@ -138,13 +138,13 @@ h6 {
   transition: all .3s linear;
 }
 a,
+a:link,
 a:active {
   width: auto;
   text-decoration: none;
   color: #323737;
 }
-a .btn,
-a:active .btn {
+a.btn {
   color: #fff;
 }
 .btn {
