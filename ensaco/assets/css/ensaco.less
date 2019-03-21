@@ -136,9 +136,13 @@
   }
 
 //Links
-a:link, a:active{
+a, a:active{
+  width:auto;
     text-decoration: none;
     color:@baseGray;
+    .btn{
+      color:#fff;
+    }
 }
 
 //Buttons
@@ -158,6 +162,7 @@ a:link, a:active{
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
+  max-width: 200px;
   &:hover{
     box-shadow: inset 200px 0 0 0 @darkOrange;
     color: #fff;

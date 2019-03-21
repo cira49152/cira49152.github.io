@@ -137,10 +137,15 @@ h6 {
 .ti-angle-down {
   transition: all .3s linear;
 }
-a:link,
+a,
 a:active {
+  width: auto;
   text-decoration: none;
   color: #323737;
+}
+a .btn,
+a:active .btn {
+  color: #fff;
 }
 .btn {
   display: flex;
@@ -158,6 +163,7 @@ a:active {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
+  max-width: 200px;
 }
 .btn:hover {
   box-shadow: inset 200px 0 0 0 #b43200;
