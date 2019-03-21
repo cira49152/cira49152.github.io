@@ -65,4 +65,18 @@ $(document).ready(function() {
         var docH = $(document).height();
         $('.ens-article__right-block').height(docH);
     };
+
+    //menu scroll hide/show
+    var prev = 0;
+    var $window = $(window);
+    var logo = $('.nav-nav-bar__logo-img');
+
+    $window.on('scroll', function() {
+        var scrollTop = $window.scrollTop();
+        $(this).attr('src', function(index, attr) {
+            return attr.replace(".svg", "-hover.svg");
+        });
+        //nav.toggleClass('hidden', scrollTop > 200);
+        //prev = scrollTop;
+    });
 });

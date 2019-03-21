@@ -158,6 +158,9 @@ h6 {
 .ti-angle-down {
   transition: all .3s linear;
 }
+.hidden {
+  display: none;
+}
 a,
 a:link,
 a:active {
