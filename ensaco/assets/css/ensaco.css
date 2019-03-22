@@ -226,6 +226,15 @@ a.btn {
 .swiper-button-free:hover {
   color: #b43200 !important;
 }
+.scroll-to-top {
+  display: none;
+  bottom: 80px;
+  right: 0px;
+  z-index: 100;
+}
+.scroll-to-top .btn {
+  background: rgba(240, 90, 0, 0.5);
+}
 .nav-bar {
   position: absolute;
   z-index: 100;
@@ -413,6 +422,15 @@ a.btn {
 .ens-article__right-block .ens-article__image {
   width: 100%;
   height: auto;
+  z-index: 5;
+}
+.ens-article__right-block blockquote i {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+}
+.ens-article__right-block blockquote p {
+  font-size: 22px;
+  line-height: 36px;
 }
 @media (max-width: 1400px) {
   .slide-content-copy__title {
@@ -495,6 +513,9 @@ a.btn {
   .ens-article__right-block {
     padding-top: 90px;
   }
+  .ens-article__right-block blockquote p {
+    line-height: 25px;
+  }
 }
 @media (max-width: 768px) {
   .ens-article__right-block {
@@ -513,8 +534,8 @@ a.btn {
     width: 100%;
   }
   h1 {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 36px;
   }
   p {
     font-size: 16px;

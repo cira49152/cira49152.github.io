@@ -47,6 +47,10 @@
         </div>
     </div>
 
+    <div class="scroll-to-top position-fixed">
+        <button class="btn p-2 "><i class="ti-angle-up"></i></button>
+    </div>
+
 
     <div class="container">
         <!--NAV BAR-->
@@ -55,7 +59,7 @@
                 <div class="col-12 nav-bar position-fixed">
                     <div class="row">
                         <div class="col-6 col-lg-3 text-left p-0">
-                            <div class="nav-bar__logo m-3 m-lg-3">
+                            <div class="nav-bar__logo js_logoHide m-3 m-lg-3">
                                 <a href="../">
                                     <img class="nav-bar__logo-img" src="../assets/images/ensaco.svg" alt="ensaco">
                                 </a>
@@ -199,17 +203,40 @@
                             </div>
 
                             <!--desni blok sa slikom-->
-                            <div class="col-0 col-md-4 col-lg-4 ens-article__right-block p-0 ">
+                            <div class="col-0 col-md-4 col-lg-4 ens-article__right-block p-0">
 
                                 <!--Slika u desnom bloku-->
-                                <div class="ens-article__image">
+                                <div class="ens-article__image position-relative">
+                                        
                                     <img src="../assets/images/industry04.jpg " width="100% " height="auto " alt="Software Solutions ">
                                 </div>
+                                <div class="ens-article__testemonial w-100 p-4 p-lg-5 text-white">
+                                    <!--Testemonial-->
+                                        <blockquote class="blockquote p-0 p-lg-3">
+                                            <p class="mb-0">
+                                                <i class="fas fa-quote-left mr-2"></i>
+                                                Pa to bre nema nigde. Sve na kilo! Ko nije prob'o ima u Ensajko. A onaj Cirko jede ko ala, jedva sam ga stigo. Boli glava! Prva liga!
+                                                <i class="fas fa-quote-right ml-2"></i>
+                                            </p>
+                                            <footer class="blockquote-footer mt-3">Dirty Manager Harry - <cite title="Source Title">NIS</cite></footer>
+                                          </blockquote>
+                                    </div>
+
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
+
+            <!--Footer-->
+            <footer>
+            <div class="row">
+            <div class="col-12 bg-light pt-5" style="height: 200px;">
+                footer placeholder
+            </div>
+        </div>
+    </footer>
         </div>
     </div>
     <script type="text/javascript " src="../assets/js/jquery-331.js "></script>

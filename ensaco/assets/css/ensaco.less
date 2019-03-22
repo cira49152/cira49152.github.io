@@ -228,6 +228,15 @@ a.btn{
     color:@darkOrange !important;
   }
 }
+.scroll-to-top{
+  display: none;
+  bottom:80px;
+  right:0px;
+  z-index: 100;
+  .btn{
+  background: fade(@baseOrange, 50%);
+}
+}
 
 
 //Nav bar
@@ -426,8 +435,20 @@ a.btn{
   .ens-article__image{
     width:100%;
     height: auto;
+    z-index: 5;
+    }
+    blockquote{
+      i{
+        color:fade(white, 30%);
+        font-size: 20px;
+      }
+      p{
+        font-size: 22px;
+        line-height: 36px;
+      }
   }
 }
+
 
 
 @media(max-width:1400px){
@@ -515,6 +536,13 @@ a.btn{
   .ens-article__right-block{
   padding-top:90px;
   }
+  .ens-article__right-block{
+      blockquote{
+        p{
+          line-height: 25px;
+        }
+      }
+    }
 }
 
 @media(max-width:768px){
@@ -535,8 +563,8 @@ a.btn{
     width: 100%;
   }
   h1{
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 36px;
   }
   p{
     font-size: 16px;
