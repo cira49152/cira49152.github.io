@@ -432,6 +432,12 @@ a.btn {
   font-size: 22px;
   line-height: 36px;
 }
+.ens-article__right-block .ens-article__files .ens-article__files-file a {
+  color: white;
+}
+.ens-article__right-block .ens-article__files .ens-article__files-file a:hover {
+  color: #f05a00 !important;
+}
 @media (max-width: 1400px) {
   .slide-content-copy__title {
     font-size: 68px;
