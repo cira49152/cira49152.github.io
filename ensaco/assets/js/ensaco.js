@@ -81,6 +81,7 @@ $(document).ready(function() {
           $('.scroll-to-top').fadeIn();
          }
      });
+     //scroll to top btn
      $('.scroll-to-top').click(function() {
         $('html, body').animate({ scrollTop: 0 }, 'slow');
         return false;
