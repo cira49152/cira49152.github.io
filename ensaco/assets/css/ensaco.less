@@ -416,7 +416,7 @@ a.btn{
   background: fade(@baseGray, 10%);
   white-space: nowrap;
   th{
-    background: fade(@baseOrange, 10%);
+    background: fade(@baseOrange, 25%);
     font-size: 14px;
     font-weight: 600;
     padding: 9px 18px;
@@ -457,6 +457,25 @@ a.btn{
       }
     }
     }
+}
+.ens-footer--bg-color{
+  background:lighten(@baseGray, 10%);
+}
+.ens-footer-links{
+  a{
+    color:@baseOrange;
+    &:after{
+      content:"\2027";
+      margin:0 7px;
+    }
+    &:last-of-type::after{
+      content:"";
+      font-family: 'themify';
+    }
+    }
+  }
+li.breadcrumb-item{
+  font-size: 14px;
 }
 
 

@@ -83,9 +83,11 @@ $(document).ready(function() {
           $('.scroll-to-top').fadeIn(200);
          }
      });
+    
      //scroll to top btn
      $('.scroll-to-top').click(function() {
         $('html, body').animate({ scrollTop: 0 }, 'slow');
         return false;
       });
+    
 });

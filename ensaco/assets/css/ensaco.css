@@ -405,7 +405,7 @@ a.btn {
   white-space: nowrap;
 }
 .ens-article__table-wrapper .ens-article__table th {
-  background: rgba(240, 90, 0, 0.1);
+  background: rgba(240, 90, 0, 0.25);
   font-size: 14px;
   font-weight: 600;
   padding: 9px 18px;
@@ -437,6 +437,23 @@ a.btn {
 }
 .ens-article__right-block .ens-article__files .ens-article__files-file a:hover {
   color: #f05a00 !important;
+}
+.ens-footer--bg-color {
+  background: #4a5252;
+}
+.ens-footer-links a {
+  color: #f05a00;
+}
+.ens-footer-links a:after {
+  content: "\2027";
+  margin: 0 7px;
+}
+.ens-footer-links a:last-of-type::after {
+  content: "";
+  font-family: 'themify';
+}
+li.breadcrumb-item {
+  font-size: 14px;
 }
 @media (max-width: 1400px) {
   .slide-content-copy__title {
