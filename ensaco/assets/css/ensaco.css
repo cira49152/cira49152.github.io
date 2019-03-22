@@ -78,10 +78,10 @@ h1 {
 h2 {
   display: block;
   width: auto;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 700;
   color: #f05a00;
-  letter-spacing: 6px;
+  letter-spacing: 0px;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -160,6 +160,12 @@ h6 {
 }
 .hidden {
   display: none;
+}
+.text-orange {
+  color: #f05a00;
+}
+.text-darkorange {
+  color: #b43200;
 }
 a,
 a:link,
@@ -454,6 +460,12 @@ a.btn {
 }
 li.breadcrumb-item {
   font-size: 14px;
+}
+li.breadcrumb-item a {
+  transition: all 0.25s linear;
+}
+li.breadcrumb-item a:hover {
+  color: #f05a00;
 }
 @media (max-width: 1400px) {
   .slide-content-copy__title {

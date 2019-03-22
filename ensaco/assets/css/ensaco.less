@@ -78,10 +78,10 @@
   h2{
     display: block;
     width:auto;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 700;
     color: @baseOrange;
-    letter-spacing: 6px;
+    letter-spacing: 0px;
     line-height: 18px;
     text-transform: uppercase;
   }
@@ -159,6 +159,12 @@
   }
   .hidden{
     display:none;
+  }
+  .text-orange{
+    color:@baseOrange;
+  }
+  .text-darkorange{
+    color:@darkOrange;
   }
 
 //Links
@@ -476,6 +482,12 @@ a.btn{
   }
 li.breadcrumb-item{
   font-size: 14px;
+  a{
+    transition: @transition;
+    &:hover{
+      color:@baseOrange;
+    }
+  }
 }
 
 
