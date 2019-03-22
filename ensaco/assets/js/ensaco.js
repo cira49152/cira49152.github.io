@@ -68,17 +68,17 @@ $(document).ready(function() {
 
     //scroll hide/show logo
     $(window).scroll(function() {
-        if ($(this).scrollTop()>0){
-            $('.js_logoHide').fadeOut();
+        if ($(this).scrollTop()>15){
+            $('.js_logoHide').fadeOut(200);
          }
         else{
-          $('.js_logoHide').fadeIn();
+          $('.js_logoHide').fadeIn(200);
          }
          if ($(this).scrollTop()<800){
-            $('.scroll-to-top').fadeOut();
+            $('.scroll-to-top').fadeOut(200);
          }
         else{
-          $('.scroll-to-top').fadeIn();
+          $('.scroll-to-top').fadeIn(200);
          }
      });
      //scroll to top btn
