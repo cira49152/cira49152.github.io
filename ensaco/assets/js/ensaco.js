@@ -67,6 +67,8 @@ $(document).ready(function() {
     };
 
     //scroll hide/show logo
+    var winHeight = $(window).height();
+    var winHalf = winHeight/2;
     $(window).scroll(function() {
         if ($(this).scrollTop()>15){
             $('.js_logoHide').fadeOut(200);
@@ -74,7 +76,7 @@ $(document).ready(function() {
         else{
           $('.js_logoHide').fadeIn(200);
          }
-         if ($(this).scrollTop()<800){
+         if ($(this).scrollTop() < winHalf){
             $('.scroll-to-top').fadeOut(200);
          }
         else{

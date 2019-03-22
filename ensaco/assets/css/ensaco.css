@@ -228,8 +228,8 @@ a.btn {
 }
 .scroll-to-top {
   display: none;
-  bottom: 0;
-  right: 0;
+  bottom: 28px;
+  right: 14px;
   z-index: 100;
 }
 .scroll-to-top .btn {
