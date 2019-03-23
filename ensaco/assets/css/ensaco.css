@@ -167,12 +167,24 @@ h6 {
 .text-darkorange {
   color: #b43200;
 }
-a,
-a:link,
-a:active {
-  width: auto;
-  text-decoration: none;
+a {
+  font-size: 16px;
+  font-weight: 500;
   color: #323737;
+  transition: all 0.25s linear;
+}
+a:hover {
+  color: #f05a00;
+  text-decoration: none;
+}
+a:hover i {
+  transform: rotate(0deg);
+}
+a i {
+  margin-right: 5px;
+  font-size: 14px;
+  transition: all 0.25s linear;
+  transform: rotate(-45deg);
 }
 a.btn {
   color: #fff;
@@ -337,7 +349,7 @@ a.btn {
   opacity: .5;
 }
 .nav-bar__menu-items .level-1 .level-2 li a {
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 3px;
   font-weight: 300;
   text-transform: uppercase;
@@ -448,6 +460,7 @@ a.btn {
   background: #4a5252;
 }
 .ens-footer-links a {
+  font-size: 14px;
   color: #f05a00;
 }
 .ens-footer-links a:after {
@@ -462,10 +475,23 @@ li.breadcrumb-item {
   font-size: 14px;
 }
 li.breadcrumb-item a {
+  font-size: 14px;
   transition: all 0.25s linear;
 }
 li.breadcrumb-item a:hover {
   color: #f05a00;
+}
+.article-card {
+  background: rgba(50, 55, 55, 0.07);
+}
+.article-card .article-card__image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 240px;
+}
+.distancer {
+  height: 100px;
 }
 @media (max-width: 1400px) {
   .slide-content-copy__title {
@@ -580,6 +606,12 @@ li.breadcrumb-item a:hover {
     width: 38px;
     height: 38px;
     font-size: 20px;
+  }
+  .btn-rnd:hover,
+  .btn-rnd:active {
+    width: 38px;
+    height: 38px;
+    background: #b43200;
   }
   .nav-bar__menu-items {
     width: 300px;
