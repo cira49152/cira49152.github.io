@@ -18,7 +18,8 @@
     font-weight: normal;
     font-display: auto;
     src: url("@{fontPath}fa-brands-400.eot");
-    src: url("@{fontPath}fa-brands-400.eot?#iefix") format("embedded-opentype"), url("@{fontPath}fa-brands-400.woff2") format("woff2"), url("@{fontPath}fa-brands-400.woff") format("woff"), url("@{fontPath}fa-brands-400.ttf") format("truetype"), url("@{fontPath}fa-brands-400.svg#fontawesome") format("svg"); }
+    src: url("@{fontPath}fa-brands-400.eot?#iefix") format("embedded-opentype"), url("@{fontPath}fa-brands-400.woff2") format("woff2"), url("@{fontPath}fa-brands-400.woff") format("woff"), url("@{fontPath}fa-brands-400.ttf") format("truetype"), url("@{fontPath}fa-brands-400.svg#fontawesome") format("svg");
+  }
   
   @font-face {
     font-family: 'Font Awesome 5 Free';
@@ -26,23 +27,27 @@
     font-weight: 400;
     font-display: auto;
     src: url("@{fontPath}fa-regular-400.eot");
-    src: url("@{fontPath}fa-regular-400.eot?#iefix") format("embedded-opentype"), url("@{fontPath}fa-regular-400.woff2") format("woff2"), url("@{fontPath}fa-regular-400.woff") format("woff"), url("@{fontPath}fa-regular-400.ttf") format("truetype"), url("@{fontPath}fa-regular-400.svg#fontawesome") format("svg"); }
-    @font-face {
-      font-family: 'Font Awesome 5 Free';
-      font-style: normal;
-      font-weight: 900;
-      font-display: auto;
-      src: url("@{fontPath}fa-solid-900.eot");
-      src: url("@{fontPath}fa-solid-900.eot?#iefix") format("embedded-opentype"), url("@{fontPath}fa-solid-900.woff2") format("woff2"), url("@{fontPath}fa-solid-900.woff") format("woff"), url("@{fontPath}fa-solid-900.ttf") format("truetype"), url("@{fontPath}fa-solid-900.svg#fontawesome") format("svg"); }
-      .fab {
-        font-family: 'Font Awesome 5 Brands'; }
-    .fa,
-    .fas {
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900; }
-    .far {
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 400; }
+    src: url("@{fontPath}fa-regular-400.eot?#iefix") format("embedded-opentype"), url("@{fontPath}fa-regular-400.woff2") format("woff2"), url("@{fontPath}fa-regular-400.woff") format("woff"), url("@{fontPath}fa-regular-400.ttf") format("truetype"), url("@{fontPath}fa-regular-400.svg#fontawesome") format("svg");
+  }
+    
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("@{fontPath}fa-solid-900.eot");
+    src: url("@{fontPath}fa-solid-900.eot?#iefix") format("embedded-opentype"), url("@{fontPath}fa-solid-900.woff2") format("woff2"), url("@{fontPath}fa-solid-900.woff") format("woff"), url("@{fontPath}fa-solid-900.ttf") format("truetype"), url("@{fontPath}fa-solid-900.svg#fontawesome") format("svg");
+  }
+    
+  .fab {
+    font-family: 'Font Awesome 5 Brands'; }
+  .fa,
+  .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
+  .far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400; }
   
   //Base Styles
   *{
@@ -476,11 +481,11 @@ a.btn{
         color:white;
         &:hover{
           color:@baseOrange !important;
+          }
         }
       }
     }
-    }
-}
+  }
 .ens-footer--bg-color{
   background:lighten(@baseGray, 10%);
 }
@@ -509,14 +514,6 @@ li.breadcrumb-item{
   }
 }
 
-// .article-textblock{
-//   .article-textblock__title{
-
-//   }
-//   .article-textblock__text{
-
-//   }
-// }
 .article-card{
   background: fade(@baseGray, 7%);
   .article-card__image{
@@ -526,11 +523,10 @@ li.breadcrumb-item{
     min-height: 240px;
   }
 }
+
 .distancer{
   height:100px;
 }
-
-
 
 
 @media(max-width:1400px){

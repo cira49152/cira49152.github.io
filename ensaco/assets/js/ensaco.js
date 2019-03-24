@@ -68,26 +68,24 @@ $(document).ready(function() {
 
     //scroll hide/show logo
     var winHeight = $(window).height();
-    var winHalf = winHeight/2;
+    var winHalf = winHeight / 2;
     $(window).scroll(function() {
-        if ($(this).scrollTop()>15){
+        if ($(this).scrollTop() > 15) {
             $('.js_logoHide').fadeOut(200);
-         }
-        else{
-          $('.js_logoHide').fadeIn(200);
-         }
-         if ($(this).scrollTop() < winHalf){
+        } else {
+            $('.js_logoHide').fadeIn(200);
+        }
+        if ($(this).scrollTop() < winHalf) {
             $('.scroll-to-top').fadeOut(200);
-         }
-        else{
-          $('.scroll-to-top').fadeIn(200);
-         }
-     });
-    
-     //scroll to top btn
-     $('.scroll-to-top').click(function() {
+        } else {
+            $('.scroll-to-top').fadeIn(200);
+        }
+    });
+
+    //scroll to top btn
+    $('.scroll-to-top').click(function() {
         $('html, body').animate({ scrollTop: 0 }, 'slow');
         return false;
-      });
-    
+    });
+
 });
