@@ -415,7 +415,8 @@ a.btn {
   margin-top: 150px;
 }
 .ens-article__left-block .ens-article__inline-image {
-  width: 90%;
+  width: 100%;
+  height: auto;
 }
 .ens-article__table-wrapper {
   overflow: auto;
@@ -624,9 +625,6 @@ li.breadcrumb-item a:hover {
     font-size: 19px;
     line-height: 28px;
     letter-spacing: 0;
-  }
-  .ens-article__left-block .ens-article__inline-image {
-    width: 100%;
   }
 }
 @media (max-width: 321px) {
