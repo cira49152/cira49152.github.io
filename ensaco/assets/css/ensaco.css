@@ -225,6 +225,8 @@ a.btn {
   cursor: pointer;
   transition: all 0.3s ease-out;
   color: #fff;
+}
+.btn-rnd a {
   font-size: 22px;
 }
 .btn-rnd:hover {
