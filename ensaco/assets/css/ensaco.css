@@ -167,9 +167,13 @@ h6 {
 .text-darkorange {
   color: #b43200;
 }
+.contact-map {
+  width: 100%;
+  height: calc(100vh - 500px);
+}
 a {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   color: #323737;
   transition: all 0.25s linear;
 }
