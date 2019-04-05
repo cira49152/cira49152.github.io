@@ -186,6 +186,7 @@ a{
       }
     }
     i{
+      color:@baseOrange;
       margin-right:5px;
       font-size: 14px;
       transition: @transition;
@@ -442,7 +443,7 @@ a.btn{
 .ens-article__table-wrapper{
   overflow: auto;
 .ens-article__table{
-  background: fade(@baseGray, 10%);
+  background: fade(@baseGray, 7%);
   white-space: nowrap;
   th{
     background: fade(@baseOrange, 25%);
@@ -528,6 +529,20 @@ li.breadcrumb-item{
 .distancer{
   height:100px;
 }
+.video-block {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
 
 @media(max-width:1400px){

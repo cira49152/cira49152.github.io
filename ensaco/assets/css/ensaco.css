@@ -181,6 +181,7 @@ a:hover i {
   transform: rotate(0deg);
 }
 a i {
+  color: #f05a00;
   margin-right: 5px;
   font-size: 14px;
   transition: all 0.25s linear;
@@ -422,7 +423,7 @@ a.btn {
   overflow: auto;
 }
 .ens-article__table-wrapper .ens-article__table {
-  background: rgba(50, 55, 55, 0.1);
+  background: rgba(50, 55, 55, 0.07);
   white-space: nowrap;
 }
 .ens-article__table-wrapper .ens-article__table th {
@@ -495,6 +496,19 @@ li.breadcrumb-item a:hover {
 }
 .distancer {
   height: 100px;
+}
+.video-block {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.video-block iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 1400px) {
   .slide-content-copy__title {
