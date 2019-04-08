@@ -88,4 +88,8 @@ $(document).ready(function() {
         return false;
     });
 
+    //ens-article__right-block
+    var footerHeight = $('.ens-footer--bg-color').height();
+    $('.ens-article__right-block').css('margin-bottom', footerHeight);
+
 });

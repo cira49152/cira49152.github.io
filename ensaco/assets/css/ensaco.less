@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
 //fonts
-  @font-face {
-    font-family: 'Lora', serif;
-    font-weight: normal;
-    src: url("@{fontPath}Lora-Regular.ttf") format('ttf');
-  }
-  @font-face {
-    font-family: 'Lora', serif;
-    font-weight: bold;
-    src: url("@{fontPath}Lora-Bold.ttf") format('ttf');
-  }
+  // @font-face {
+  //   font-family: 'Lora', serif;
+  //   font-weight: normal;
+  //   src: url("@{fontPath}Lora-Regular.ttf") format('ttf');
+  // }
+  // @font-face {
+  //   font-family: 'Lora', serif;
+  //   font-weight: bold;
+  //   src: url("@{fontPath}Lora-Bold.ttf") format('ttf');
+  // }
   @font-face {
     font-family: 'Font Awesome 5 Brands';
     font-style: normal;
@@ -56,6 +56,7 @@
   .container{
       max-width: 100%;
       min-width: 100%;
+      min-height: 100vh;
   }
 
   html, body{
@@ -178,7 +179,7 @@
 
 //Links
 a{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     color: @baseGray;
     transition: @transition;
@@ -439,6 +440,8 @@ a.btn{
 //Article content
 .ens-article__left-block{
   margin-top:150px;
+  margin-bottom:100px;
+
   .ens-article__inline-image{
     width:100%;
     height: auto;
@@ -494,6 +497,8 @@ a.btn{
   }
 .ens-footer--bg-color{
   background:lighten(@baseGray, 10%);
+  position: absolute;
+  bottom:0;
 }
 .ens-footer-links{
   a{
@@ -546,8 +551,12 @@ li.breadcrumb-item{
     height: 100%;
   }
 }
-
-
+.map-position{
+  margin-top:60px;
+}
+.contacts{
+  margin-bottom: 100px;
+}
 
 @media(max-width:1400px){
   .slide-content-copy__title{
@@ -647,6 +656,9 @@ li.breadcrumb-item{
   .ens-article__right-block{
     padding-top: 0px;
   }
+  .ens-article__left-block{
+    margin-bottom:0; 
+    }
 }
 
 @media(max-width: 576px) {
