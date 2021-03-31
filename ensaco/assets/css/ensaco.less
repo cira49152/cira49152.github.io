@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
 //fonts
-  @font-face {
-    font-family: 'Lora', serif;
-    font-weight: normal;
-    src: url("@{fontPath}Lora-Regular.ttf") format('ttf');
-  }
-  @font-face {
-    font-family: 'Lora', serif;
-    font-weight: bold;
-    src: url("@{fontPath}Lora-Bold.ttf") format('ttf');
-  }
+  // @font-face {
+  //   font-family: 'Lora', serif;
+  //   font-weight: normal;
+  //   src: url("@{fontPath}Lora-Regular.ttf") format('ttf');
+  // }
+  // @font-face {
+  //   font-family: 'Lora', serif;
+  //   font-weight: bold;
+  //   src: url("@{fontPath}Lora-Bold.ttf") format('ttf');
+  // }
   @font-face {
     font-family: 'Font Awesome 5 Brands';
     font-style: normal;
@@ -56,6 +56,7 @@
   .container{
       max-width: 100%;
       min-width: 100%;
+      min-height: 100vh;
   }
 
   html, body{
@@ -178,7 +179,7 @@
 
 //Links
 a{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     color: @baseGray;
     transition: @transition;
@@ -190,6 +191,7 @@ a{
       }
     }
     i{
+      color:@baseOrange;
       margin-right:5px;
       font-size: 14px;
       transition: @transition;
@@ -438,6 +440,8 @@ a.btn{
 //Article content
 .ens-article__left-block{
   margin-top:150px;
+  margin-bottom:100px;
+
   .ens-article__inline-image{
     width:100%;
     height: auto;
@@ -446,7 +450,7 @@ a.btn{
 .ens-article__table-wrapper{
   overflow: auto;
 .ens-article__table{
-  background: fade(@baseGray, 10%);
+  background: fade(@baseGray, 7%);
   white-space: nowrap;
   th{
     background: fade(@baseOrange, 25%);
@@ -493,6 +497,8 @@ a.btn{
   }
 .ens-footer--bg-color{
   background:lighten(@baseGray, 10%);
+  position: absolute;
+  bottom:0;
 }
 .ens-footer-links{
   a{
@@ -532,7 +538,25 @@ li.breadcrumb-item{
 .distancer{
   height:100px;
 }
-
+.video-block {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.map-position{
+  margin-top:60px;
+}
+.contacts{
+  margin-bottom: 100px;
+}
 
 @media(max-width:1400px){
   .slide-content-copy__title{
@@ -632,6 +656,9 @@ li.breadcrumb-item{
   .ens-article__right-block{
     padding-top: 0px;
   }
+  .ens-article__left-block{
+    margin-bottom:0; 
+    }
 }
 
 @media(max-width: 576px) {

@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @font-face {
-  font-family: 'Lora', serif;
-  font-weight: normal;
-  src: url("../fonts/Lora-Regular.ttf") format('ttf');
-}
-@font-face {
-  font-family: 'Lora', serif;
-  font-weight: bold;
-  src: url("../fonts/Lora-Bold.ttf") format('ttf');
-}
-@font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
@@ -51,6 +41,7 @@
 .container {
   max-width: 100%;
   min-width: 100%;
+  min-height: 100vh;
 }
 html,
 body {
@@ -172,7 +163,7 @@ h6 {
   height: calc(100vh - 500px);
 }
 a {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   color: #323737;
   transition: all 0.25s linear;
@@ -185,6 +176,7 @@ a:hover i {
   transform: rotate(0deg);
 }
 a i {
+  color: #f05a00;
   margin-right: 5px;
   font-size: 14px;
   transition: all 0.25s linear;
@@ -417,6 +409,7 @@ a.btn {
 }
 .ens-article__left-block {
   margin-top: 150px;
+  margin-bottom: 100px;
 }
 .ens-article__left-block .ens-article__inline-image {
   width: 100%;
@@ -426,7 +419,7 @@ a.btn {
   overflow: auto;
 }
 .ens-article__table-wrapper .ens-article__table {
-  background: rgba(50, 55, 55, 0.1);
+  background: rgba(50, 55, 55, 0.07);
   white-space: nowrap;
 }
 .ens-article__table-wrapper .ens-article__table th {
@@ -465,6 +458,8 @@ a.btn {
 }
 .ens-footer--bg-color {
   background: #4a5252;
+  position: absolute;
+  bottom: 0;
 }
 .ens-footer-links a {
   font-size: 14px;
@@ -499,6 +494,25 @@ li.breadcrumb-item a:hover {
 }
 .distancer {
   height: 100px;
+}
+.video-block {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.video-block iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.map-position {
+  margin-top: 60px;
+}
+.contacts {
+  margin-bottom: 100px;
 }
 @media (max-width: 1400px) {
   .slide-content-copy__title {
@@ -588,6 +602,9 @@ li.breadcrumb-item a:hover {
 @media (max-width: 768px) {
   .ens-article__right-block {
     padding-top: 0px;
+  }
+  .ens-article__left-block {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 576px) {
